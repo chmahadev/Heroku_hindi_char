@@ -9,7 +9,7 @@ import base64
 app = Flask(__name__)
 
 # Load prebuilt model
-model = keras.models.load_model('/base_model_93.4per.h5')
+model = keras.models.load_model('base_model_93.4per.h5')
 
 # Handle GET request
 @app.route('/', methods=['GET'])
