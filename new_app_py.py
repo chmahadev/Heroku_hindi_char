@@ -14,7 +14,7 @@ model = keras.models.load_model('/base_model_93.4per.h5')
 # Handle GET request
 @app.route('/', methods=['GET'])
 def drawing():
-    return render_template('index.html')
+    return render_template('index.html5')
 
 # Handle POST request
 @app.route('/', methods=['POST'])
@@ -39,6 +39,6 @@ def canvas():
     try:
         prediction = np.argmax(model.predict(img))
         print(f"Prediction Result : {str(prediction)}")
-        return render_template('index.html', response=str(prediction), canvasdata=canvasdata, success=True)
+        return render_template('index.html5', response=str(prediction), canvasdata=canvasdata, success=True)
     except Exception as e:
-        return render_template('index.html', response=str(e), canvasdata=canvasdata)
+        return render_template('index.html5', response=str(e), canvasdata=canvasdata)
