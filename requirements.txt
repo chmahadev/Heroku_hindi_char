@@ -3,3 +3,4 @@ keras
 tensorflow-cpu
 numpy==1.22.2
 Flask
+opencv-python-headless
