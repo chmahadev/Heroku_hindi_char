@@ -9,7 +9,7 @@ import base64
 app = Flask(__name__)
 
 # Load prebuilt model
-model = keras.models.load_model('base_model_93.4per.h5')
+model = keras.models.load_model('4_model.h5')
 label = {0: 'yna',1:'taamatar',
  2: 'thaa',
  3:'daa',
